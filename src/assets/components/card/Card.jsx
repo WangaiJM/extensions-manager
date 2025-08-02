@@ -10,12 +10,20 @@ const Card = () => {
   const handleActive = () => {
     setFilteredExtensions(extensions.filter((ext) => ext.isActive));
   };
+  const handleNotActive = () => {
+    setFilteredExtensions(extensions.filter((ext) => !ext.isActive));
+  };
 
+  const showAll = () => {
+    setFilteredExtensions([]);
+  };
   const toDisplay =
     filteredExtensions.length > 0 ? filteredExtensions : extensions;
   return (
     <>
       <button onClick={handleActive}>Active</button>
+      <button onClick={handleNotActive}>In Active</button>
+      <button onClick={showAll}>All</button>
 
       <article className="card">
         {toDisplay.map((extension, index) => {

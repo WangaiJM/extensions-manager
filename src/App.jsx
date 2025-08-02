@@ -1,4 +1,10 @@
+import Card from "./assets/components/card/Card";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className="container">
+      <Card />
+    </div>
+  );
 };
 export default App;

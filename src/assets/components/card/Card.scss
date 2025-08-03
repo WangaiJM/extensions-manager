@@ -82,3 +82,51 @@
     }
   }
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--neutral-100);
+  margin-bottom: 2rem;
+
+  &__title {
+    padding: 1rem;
+  }
+  &__filters {
+    .btn {
+      padding: 0.5rem 1rem;
+      outline: none;
+      border-radius: 2rem;
+      background-color: var(--neutral-600);
+      color: var(--neutral-100);
+      margin-left: 1rem;
+      cursor: pointer;
+      box-shadow: 0 10px 0 var(--dark-gradient);
+    }
+    .btn-active {
+      background-color: var(--red-400);
+      color: var(--neutral-900);
+      border: 0;
+    }
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background-color: var(--neutral-800);
+
+  .darkmode {
+    .btn {
+      padding: 1rem;
+      background-color: var(--neutral-800);
+      color: var(--neutral-100);
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

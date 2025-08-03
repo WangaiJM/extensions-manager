@@ -14,7 +14,21 @@
   --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
-
+.lightmode {
+  --neutral-100: hsl(227, 75%, 14%);
+  --neutral-200: hsl(226, 25%, 17%);
+  --neutral-300: hsl(225, 23%, 24%);
+  --neutral-0: hsl(226, 11%, 37%);
+  --neutral-700: hsl(0, 0%, 78%);
+  --neutral-900: hsl(217, 61%, 90%);
+  --neutral-800: hsl(0, 0%, 93%);
+  --neutral-600: hsl(200, 60%, 99%);
+  --red-700: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-400: hsl(3, 77%, 44%);
+  --dark-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --light-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +43,7 @@ body {
   background-color: var(--neutral-900);
 }
 .container {
-  width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 img {
